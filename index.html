@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Todo list</title>
+</head>
+
+<body class="page">
+    <h1 class="header">Todo List</h1>
+    <section class="section">
+        <form class="add_form">
+            <input class="add_form__input" name="title" type="text" value="Разобраться в замыканиях" />
+            <button class="add_form__button" type="submit">Сохранить</button>
+        </form>
+        <ul class="items">
+        </ul>
+    </section>
+    <template id="item">
+        <li class="todo_item">
+            <h3 class="todo_item__header">Полить цветы</h3>
+            <div class="buttons">
+                <button type="button" class="button button__edit"></button>
+                <button type="button" class="button button__duplicate"></button>
+                <button type="button" class="button button__delete"></button>
+            </div>
+        </li>
+    </template>
+    <script src="./scripts/index.js" defer></script>
+</body>
+
+</html>

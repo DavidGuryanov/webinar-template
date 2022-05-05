@@ -1,0 +1,116 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+
+.page {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Inter';
+  max-width: 700px;
+  /* width: 650px; */
+  margin: 0 auto;
+}
+.section {
+  width: 100%;
+}
+
+.header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+}
+
+.add_form {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add_form__input {
+  flex-grow: 1;
+  border-radius: 5px;
+  border: none;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 21px 21px 26px;
+}
+
+.add_form__button {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 10px;
+  padding: 0;
+}
+
+.todo_item {
+  border: 1px solid #6f6f6f;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  padding: 0px 45px;
+  height: 110px;
+  align-items: center;
+}
+.todo_item__header {
+  margin: 0 auto 0 0;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.button__edit {
+  background-image: url('../images/Edit.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button__duplicate {
+  background-image: url('../images/Duplicate.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button__delete {
+  background-image: url('../images/delete.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.todo_item__header-editing {
+  flex-grow: 1;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 29px;
+}
