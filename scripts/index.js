@@ -15,6 +15,17 @@ const itemListWrapper = document.querySelector('.items');
 const form = document.querySelector('.add_form');
 const template = document.getElementById('item');
 
+itemListWrapper.addEventListener('click', (evt) => {
+  console.log(evt.target);
+  if (evt.target.classList.contains('button__delete')) {
+    handleDeleteItem(evt);
+  } else if (evt.target.classList.contains('button__duplicate')) {
+    handleDuplicateItem(evt);
+  } else if (evt.target.classList.contains('button__edit')) {
+    handleEditItem(evt);
+  }
+});
+
 const handleDeleteItem = (evt) => {
   evt.target.closest('.todo_item').remove();
 };
@@ -53,9 +64,9 @@ const getItemElement = (title) => {
   const deleteButton = newItemElement.querySelector('.button__delete');
   const editButton = newItemElement.querySelector('.button__edit');
   const duplicateButton = newItemElement.querySelector('.button__duplicate');
-  deleteButton.addEventListener('click', handleDeleteItem);
-  duplicateButton.addEventListener('click', handleDuplicateItem);
-  editButton.addEventListener('click', handleEditItem);
+  //   deleteButton.addEventListener('click', handleDeleteItem);
+  //   duplicateButton.addEventListener('click', handleDuplicateItem);
+  //   editButton.addEventListener('click', handleEditItem);
   return newItemElement;
 };
 
